@@ -1,0 +1,15 @@
+.primaryDataFigure {
+  display: inline-block;
+  margin: 10px;
+  border: 5px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  /*width: 200px;*/
+  padding: 20px;
+}
+.primaryDataFigure > strong > h1 {
+  color: #C13928;
+}
+.primaryDataFigure > h6 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+	font-style: italic;
+}

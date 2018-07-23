@@ -1,0 +1,67 @@
+.worldImageBackground {
+  background: url(dotted-world-map.gif);
+}
+
+.nursesWorkingBackground {
+  background: url(nurses-working.jpg);
+}
+
+.africanVillageBackground {
+  background: url(african-village.jpg);
+}
+
+.primDataWidget {
+  /* background: url(dotted-world-map.gif); */
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  width: auto;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+.primDataWidget header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* NOT NEEDED I Don't see it having any effect*/
+/* .primDataWidget > header::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: inherit;
+  background-attachment: fixed; */
+  /*-webkit-filter: blur(4px);
+  filter: blur(4px);*/
+/* } */
+
+.primDataWidget header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.50)
+}
+.primDataWidget header h4 {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* NOT NEEDED I Don't see it having any effect*/
+/* * {
+  box-sizing: border-box;
+} */

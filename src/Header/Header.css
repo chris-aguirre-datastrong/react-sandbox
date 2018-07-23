@@ -1,0 +1,58 @@
+.React {
+  text-align: center;
+}
+
+.React-logo {
+  animation: React-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.React-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.React-title {
+  font-size: 1.5em;
+}
+
+.React-intro {
+  font-size: large;
+}
+
+@keyframes React-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Nav-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.Nav-header li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.Nav-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.Nav-header a:hover,
+.Nav-header a:active  {
+  color: red;
+}
+
+.red {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
