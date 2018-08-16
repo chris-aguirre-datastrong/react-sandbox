@@ -1,0 +1,43 @@
+-- Install devDependency
+ npm install --save-dev bootstrap
+
+--Install Radium
+npm install --save-dev radium
+
+--Uninstall mdbootstrap
+npm uninstall --save-dev mdbootstrap
+
+
+
+-- Running React Website with NGINX Locally on MAC OSX
+
+  I followed this website: https://www.sylvaindurand.org/setting-up-a-nginx-web-server-on-macos/
+
+    Installed Homebrew
+    Installed NGINX - got installed at: /usr/local/etc/nginx
+
+    To start NGINX, run: sudo brew services restart nginx
+
+    I updated nginx.conf as follows:
+
+        Command: diff nginx.conf nginx.conf.default
+        Output:
+            < #user  christopher.aguirre;
+            ---
+            > #user  nobody;
+            44c44
+            <             root   /Users/christopher.aguirre/dev/git/spotlight/build;
+            ---
+            >             root   html;
+
+    To restart nginx after conf changes: sudo brew services restart nginx
+
+    To stop nginx: sudo brew services stop nginx
+
+      or try: nginx -s stop
+
+
+    **Note: Be careful with these commands, excessive use of 'sudo' can lead to mistakes which mess up your machine!! **
+
+
+    Reference: http://nginx.org/en/docs/beginners_guide.html
