@@ -31,7 +31,7 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-        {/* This damn <StyleRoot> killed me. It made me lose hours of time because it was somehow 
+        {/* This damn <StyleRoot> killed me. It made me lose hours of time because it was somehow
             breaking my Router Links - they were not working at all in Header.js.
             Finally I removed this StyleRoot from here, and added it to Persons.js and finally the
             Router Links worked properly!!

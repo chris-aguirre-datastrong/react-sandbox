@@ -1,3 +1,6 @@
+-- Download all 'node_modules' after cloning/downloading a new React project
+  npm install
+
 -- Install devDependency
  npm install --save-dev bootstrap
 
@@ -6,6 +9,10 @@ npm install --save-dev radium
 
 --Uninstall mdbootstrap
 npm uninstall --save-dev mdbootstrap
+
+--Install React Router
+npm install --save-dev react-router react-router-dom
+
 
 
 

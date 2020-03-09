@@ -1,11 +1,40 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const sampleRouteComponent4 = () => {
-  return (
-    <div>
-      <h2>This is the text for sampleRouteComponent4</h2>
-    </div>
-  )
-};
+class SampleRouteComponent4 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: 'coconut'};
 
-export default sampleRouteComponent4;
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('Your favorite flavor is: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Pick your favorite flavor:
+
+          <select value={this.state.value} onChange={this.handleChange}>
+            <option value="grapefruit">Grapefruit</option>
+            <option value="lime">Lime</option>
+            <option value="coconut">Coconut</option>
+            <option value="mango">Mango</option>
+          </select>
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+export default SampleRouteComponent4;
